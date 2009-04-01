@@ -1,11 +1,12 @@
-Ryan Bates Dot Files
+Mateusz Drożdżyński — Dot Files
+  based on Ryan Bates Dot Files
 
 These are config files to set up a system the way I like it.
 
 
 Installation
 
-  git clone git://github.com/ryanb/dotfiles ~/.dotfiles
+  git clone git://github.com/matid/dotfiles ~/.dotfiles
   cd ~/.dotfiles
   rake install
   # edit ~/.gitconfig and personalize it
@@ -23,10 +24,10 @@ the following command.
 
 Features
 
-I normally place all of my coding projects in ~/code, so this directory 
+I normally place all of my coding projects in ~/Projects, so this directory 
 can easily be accessed (and tab completed) with the "c" command.
 
-  c railsca<tab>
+  c poker<tab>
 
 There is also an "h" command which behaves similar, but acts on the 
 home path.

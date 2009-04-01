@@ -1,14 +1,15 @@
 [user]
-	name = Ryan Bates
-	email = ryan@railscasts.com
+	name = Mateusz Drożdżyński
+	email = matid@matid.net
 [alias]
 	co = checkout
+	st = status
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 [core]
-	excludesfile = /Users/rbates/.gitignore
+	excludesfile = /Users/matid/.gitignore
 	editor = mate -w
 [apply]
 	whitespace = nowarn

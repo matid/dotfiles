@@ -1,12 +1,17 @@
+case "$TERM" in
+xterm-color)
+  PS1='$PR_LIGHT_GREEN%3~$PR_WHITE$(git_info_for_prompt)%# ';;
+*)
+  PS1='%3~$(git_info_for_prompt)%# ';;
+esac
+
 if [[ -n $SSH_CONNECTION ]]; then
-  export PS1='%m:%3~$(git_info_for_prompt)%# '
-else
-  export PS1='%3~$(git_info_for_prompt)%# '
+  export PS1="%m:$PS1"
 fi
 
 export EDITOR='mate -w'
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/lib/postgresql83/bin:$PATH
+export MANPATH=/opt/local/man:$MANPATH
 
 fpath=(~/.zsh/functions $fpath)
 

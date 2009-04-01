@@ -1,2 +1,32 @@
-export PS1="\w$ "
 export EDITOR="mate -w"
+
+function parse_git_dirty {
+  git diff --quiet 2> /dev/null || echo "*"
+}
+
+function parse_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
+}
+
+function parse_bzr_branch {
+  if [ -d '.bzr' ]; then
+    bzr diff --quiet &> /dev/null
+    if [ $? == 1 ]; then
+      echo "[*]"
+    fi
+  fi
+}
+
+case "$TERM" in
+xterm-color)
+    PS1='\[\033[01;32m\]\w\[\033[00m\]$(parse_git_branch)$(parse_bzr_branch)\[\033[00m\]';;
+*)
+    PS1='\w$(parse_git_branch)$(parse_bzr_branch)';;
+esac
+
+case `/usr/bin/whoami` in
+root)
+  PS1="$PS1# ";;
+*)
+  PS1="$PS1% ";;
+esac
