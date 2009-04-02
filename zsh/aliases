@@ -30,3 +30,7 @@ alias rst='touch tmp/restart.txt'
 
 # commands starting with % for pasting from web
 alias %=' '
+
+# maintenance
+alias tf='find . -iregex ".*.~[0-9]*~$"'
+alias tp='find . -iregex ".*.~[0-9]*~$" -exec rm {} \;'
