@@ -1,9 +1,9 @@
 case "$TERM" in
 xterm-color)
-  PS1='$PR_LIGHT_GREEN%3~$PR_WHITE$(git_info_for_prompt)'
+  PS1='$PR_LIGHT_GREEN%3~$PR_LIGHT_WHITE$(git_info_for_prompt)'
 
   if [ `/usr/bin/whoami` = 'root' ]; then
-    PS1="$PS1$PR_RED%#$PR_WHITE "
+    PS1="$PS1$PR_RED%#$PR_LIGHT_WHITE "
   else
     PS1="$PS1%# "
   fi;;
