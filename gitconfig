@@ -4,6 +4,7 @@
 [alias]
 	co = checkout
 	st = status
+	uncommit = reset --soft HEAD^
 [color]
 	diff = auto
 	status = auto
