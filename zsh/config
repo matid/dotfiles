@@ -17,8 +17,6 @@ if [[ -n $SSH_CONNECTION ]]; then
 fi
 
 export EDITOR='mate -w'
-export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/lib/postgresql83/bin:$PATH
-export MANPATH=/opt/local/man:$MANPATH
 
 fpath=(~/.zsh/functions $fpath)
 

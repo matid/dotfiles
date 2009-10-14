@@ -1,0 +1,1 @@
+find . -type f -not -regex '.*/.git/*.*' | xargs wc -l | grep total | awk '{print $1}'
