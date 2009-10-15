@@ -13,10 +13,14 @@ xterm-color)
 esac
 
 if [[ -n $SSH_CONNECTION ]]; then
-  export PS1="%m:$PS1"
+  PS1="%m:$PS1"
 fi
 
+export PS1="$PS1$PR_RESET"
+
 export EDITOR='mate -w'
+
+export PATH="/usr/local/bin:/usr/local/Cellar/ruby/1.9.1-p243/bin:$PATH"
 
 fpath=(~/.zsh/functions $fpath)
 
