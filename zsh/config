@@ -20,7 +20,7 @@ export PS1="$PS1$PR_RESET"
 
 export EDITOR='mate -w'
 
-export PATH="/usr/local/bin:/usr/local/Cellar/ruby/1.9.1-p243/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 
 fpath=(~/.zsh/functions $fpath)
 
