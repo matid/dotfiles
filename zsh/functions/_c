@@ -1,2 +1,2 @@
 #compdef c
-_files -W ~/Documents/Projects -/
+_files -W ~/Projects -/

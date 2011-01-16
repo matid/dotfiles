@@ -1,6 +1,6 @@
 [user]
 	name = Mateusz Drożdżyński
-	email = matid@matid.net
+	email = m.drozdzynski@matid.net
 [alias]
 	co = checkout
 	st = status
@@ -14,5 +14,8 @@
 	editor = mate -w
 [apply]
 	whitespace = nowarn
+[breanch]
+	autosetupmerge = true
+	autosetuprebase = true
 [push]
 	default = tracking
