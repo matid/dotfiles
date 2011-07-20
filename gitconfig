@@ -1,6 +1,6 @@
 [user]
-	name = Mateusz Drożdżyński
-	email = m.drozdzynski@matid.net
+	name = Matt Drozdzynski
+	email = matt@matt.tm
 [alias]
 	co = checkout
 	st = status
@@ -19,3 +19,5 @@
 	autosetuprebase = true
 [push]
 	default = tracking
+[url "git@heroku.com:"]
+  insteadOf = "heroku:"
