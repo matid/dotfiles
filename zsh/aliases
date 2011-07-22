@@ -6,10 +6,3 @@ alias migrate='rake db:migrate db:test:clone'
 
 # commands starting with % for pasting from web
 alias %=' '
-
-# maintenance
-alias tf='find . -iregex ".*.~[0-9]*~$"'
-alias tp='find . -iregex ".*.~[0-9]*~$" -exec rm {} \;'
-
-# misc
-alias :q='exit'
